@@ -7,6 +7,7 @@ interface InviteGuestsModalProps {
   emailsToInvite: string[];
   addNewEmailToInvite: (event: FormEvent<HTMLFormElement>) => void;
   removeEmailFromInvites: (email: string) => void;
+
 }
 
 export function InviteGuestsModal({
@@ -14,6 +15,7 @@ export function InviteGuestsModal({
   emailsToInvite,
   addNewEmailToInvite,
   removeEmailFromInvites,
+
 }: InviteGuestsModalProps) {
   return (
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
@@ -56,7 +58,7 @@ export function InviteGuestsModal({
           <input
             type="email"
             name="email"
-            placeholder="Digite o e-mail do convidado"
+            placeholder="Digite o e-mail do convidado"   
             className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
           />
 
